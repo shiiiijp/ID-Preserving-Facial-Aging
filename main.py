@@ -590,7 +590,7 @@ if __name__ == "__main__":
             name = ""
 
         if opt.datadir_in_name:
-            now = os.path.basename(os.path.normpath(opt.data_root)) + now
+            now = os.path.basename(os.path.normpath(opt.data_root)) + "_" + now
             
         nowname = now + name + opt.postfix
         logdir = os.path.join(opt.logdir, nowname)
@@ -761,7 +761,7 @@ if __name__ == "__main__":
 
         trainer_kwargs["callbacks"] = [instantiate_from_config(callbacks_cfg[k]) for k in callbacks_cfg]
         trainer_kwargs["max_steps"] = trainer_opt.max_steps
-
+        
         trainer = Trainer.from_argparse_args(trainer_opt, **trainer_kwargs)
         trainer.logdir = logdir  ###
 

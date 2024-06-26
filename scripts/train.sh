@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # 変数の定義
-CUDA_DEVICE=2
+CUDA_DEVICE=1
 VERSION="v1.5"
-LOSS="biom"
-DATA_ROOT="/mnt/npalfs01disk/users/itohlee/dataset/CACD/ID/CACD_2_few"
+LOSS="cont"
+DATA_ROOT="/mnt/npalfs01disk/users/itohlee/dataset/CACD/ID/CACD_2"
 REG_DATA_ROOT="dataset/regularization/CelebA_regularization_NEW"
 
 # バージョンに基づいて変数を設定
@@ -28,7 +28,7 @@ else
 fi
 
 # NAME="${VERSION}_${LOSS}"
-NAME="v1.5_biom"
+NAME="v1.5_cont"
 GPUS="0,"
 CLASS_WORD="person"
 NO_TEST="--no-test"

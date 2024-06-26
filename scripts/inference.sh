@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # 変数の定義
-CUDA_DEVICE=3
-CKPT="logs/SubID_0001_NumImages_292024-06-05T16-11-01_v1.5_cont/checkpoints/last.ckpt"
-BASE_OUTDIR="experiment/SubID_0001_cont_v1.4"
+CUDA_DEVICE=2
+CKPT="logs/CACD_2_2024-06-12T11-12-59_v1.5_biom/checkpoints/last.ckpt"
+BASE_OUTDIR="experiment/CACD_2"
 
 CONFIG="configs/stable-diffusion/v1-inference.yaml"
 SCALE=10.0
